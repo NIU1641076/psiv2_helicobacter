@@ -81,7 +81,7 @@ def avaluacio_th2(presence_test, pred_test):
     precisio_negativa = TN / (TN + FN) if (TN + FN) > 0 else 0 
     plt.figure(figsize=(6, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=["No Presència", "Presència"], yticklabels=["No Presència", "Presència"])
-    plt.title(f'Matriu de Confusió MaxVolting')
+    plt.title(f'Matriu de Confusió MaxVoting')
     plt.xlabel('Predicció')
     plt.ylabel('Verdader')
     plt.show()  

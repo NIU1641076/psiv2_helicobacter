@@ -130,46 +130,7 @@ resultats1 = [1 if pacient >= 0.5 else 0 for pacient in percentatge_positius]
 resultats1_metriques = avaluacio_th2(presence, resultats1)
 print(resultats1_metriques)
 
-'''
-millors_metriques.sort(key=lambda x: x["metriques_finestres"]["recall"], reverse=True)
-top_3 = millors_metriques[:3]
-for idx, metrica in enumerate(top_3, start=1):
-    print(f"Top {idx}:")
-    print(f"  Threshold Fred: {metrica['th_fred']}")
-    print(f"  Threshold Finestres: {metrica['th_finestres']}")
-    print(f"  Mètriques FINESTRES: {metrica['metriques_finestres']}\n")
-
-Si falsos negativos son más críticos:
-    - Usa recall o sensibilidad.
-    - Ejemplo: Diagnosticar cáncer, donde un falso negativo podría retrasar el tratamiento.
-
-Si falsos positivos son más críticos:
-    - Usa precisión o especificidad.
-    - Ejemplo: Diagnosticar una enfermedad rara con tratamientos costosos e invasivos.
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 

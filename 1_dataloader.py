@@ -113,9 +113,9 @@ def load_annotated(fitxerexcel):
     return imatges_annotated, metadades
 
 
-#codis_negatives = carpetes_negatives('/Users/aina/Desktop/uni/4rt/psiv/repte 3/cross-validation/PatientDiagnosis.csv')
+codis_negatives = carpetes_negatives('/Users/aina/Desktop/uni/4rt/psiv/repte 3/cross-validation/PatientDiagnosis.csv')
 codis_totals = carpetes_negatives('/Users/aina/Desktop/uni/4rt/psiv/repte 3/cross-validation/PatientDiagnosis.csv')
-#imatges_cropped_negatives, metadades_cropped_negatives = load_cropped_negatives(codis_negatives, 50) 
+imatges_cropped_negatives, metadades_cropped_negatives = load_cropped_negatives(codis_negatives, 50) 
 imatges_cropped_totals, metadades_cropped_totals = load_cropped_total(codis_totals, 50)
 imatges_annotated, metadades_annotated = load_annotated('/Users/aina/Desktop/uni/4rt/psiv/repte 3/cross-validation/HP_WSI-CoordAllAnnotatedPatches.xlsx')
 
